@@ -1,0 +1,45 @@
+export interface FinancialInstitution {
+  code: string;
+  name: string;
+  types: ("BANK" | "E-WALLET" | "PAYLATER" | "CREDIT_CARD")[];
+}
+
+export const INDONESIAN_INSTITUTIONS: FinancialInstitution[] = [
+  { code: "bca", name: "BCA", types: ["BANK", "CREDIT_CARD"] },
+  { code: "mandiri", name: "Bank Mandiri", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bri", name: "BRI", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bni", name: "BNI", types: ["BANK", "CREDIT_CARD"] },
+  { code: "btn", name: "BTN", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bsi", name: "Bank Syariah Indonesia (BSI)", types: ["BANK", "CREDIT_CARD"] },
+  { code: "cimb", name: "CIMB Niaga", types: ["BANK", "CREDIT_CARD"] },
+  { code: "danamon", name: "Bank Danamon", types: ["BANK", "CREDIT_CARD"] },
+  { code: "permata", name: "PermataBank", types: ["BANK", "CREDIT_CARD"] },
+  { code: "ocbc", name: "OCBC", types: ["BANK", "CREDIT_CARD"] },
+  { code: "maybank", name: "Maybank", types: ["BANK", "CREDIT_CARD"] },
+  { code: "uob", name: "UOB", types: ["BANK", "CREDIT_CARD"] },
+  { code: "hsbc", name: "HSBC", types: ["BANK", "CREDIT_CARD"] },
+  { code: "btpn", name: "BTPN", types: ["BANK", "CREDIT_CARD"] },
+  { code: "jenius", name: "Jenius (BTPN)", types: ["BANK", "CREDIT_CARD"] },
+  { code: "jago", name: "Bank Jago", types: ["BANK"] },
+  { code: "seabank", name: "SeaBank", types: ["BANK"] },
+  { code: "superbank", name: "Superbank", types: ["BANK"] },
+  { code: "allo-bank", name: "Allo Bank", types: ["BANK"] },
+  { code: "bank-aladin", name: "Bank Aladin", types: ["BANK"] },
+  { code: "bank-bjb", name: "Bank BJB", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bank-dki", name: "Bank DKI", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bank-mega", name: "Bank Mega", types: ["BANK", "CREDIT_CARD"] },
+  { code: "bank-saqu", name: "Bank Saqu", types: ["BANK"] },
+  { code: "blu-by-bca", name: "blu by BCA Digital", types: ["BANK"] },
+  { code: "dbs-bank", name: "DBS / Digibank", types: ["BANK", "CREDIT_CARD"] },
+  { code: "krom-bank", name: "Krom Bank", types: ["BANK"] },
+  { code: "neobank", name: "Neobank (BNC)", types: ["BANK"] },
+  { code: "gopay", name: "GoPay", types: ["E-WALLET", "PAYLATER"] },
+  { code: "ovo", name: "OVO", types: ["E-WALLET", "PAYLATER"] },
+  { code: "dana", name: "DANA", types: ["E-WALLET"] },
+  { code: "shopeepay", name: "ShopeePay", types: ["E-WALLET", "PAYLATER"] },
+  { code: "linkaja", name: "LinkAja", types: ["E-WALLET"] },
+  { code: "flazz-bca", name: "Flazz BCA", types: ["E-WALLET"] },
+  { code: "mandiri-e-money", name: "Mandiri e-Money", types: ["E-WALLET"] },
+  { code: "kredivo", name: "Kredivo", types: ["PAYLATER"] },
+  { code: "cash", name: "Uang Tunai / Dompet Fisik", types: ["BANK"] },
+];
